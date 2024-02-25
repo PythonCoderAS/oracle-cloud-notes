@@ -20,6 +20,20 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: notes
+    label: Notes
+    type: collection
+    path: ''
+    view:
+      fields:
+        - title
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
   - name: config
     label: Jekyll config
     path: _config.yml
