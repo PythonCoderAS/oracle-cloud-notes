@@ -2,4 +2,4 @@
 title: Oracle Cloud Notes
 layout: default
 ---
-View notes at https://pythoncoderas.github.io/oracle-cloud-notes
+This site will contain a collection of notes on how to do various things on Oracle Cloud Infrastructure.
