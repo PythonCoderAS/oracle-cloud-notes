@@ -5,7 +5,7 @@ content:
     type: collection
     path: '_posts'
     view:
-      fields: [ title, published, date ]
+      fields: [ title, published, date, layout ]
     fields:
       - name: published
         label: Published
@@ -20,6 +20,18 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: layout
+        label: Layout
+        type: select
+        options:
+          values:
+            - home
+            - default
+            - minimal
+            - about
+            - page
+            - post
+        default: post
   - name: notes
     label: Notes
     type: collection
@@ -27,10 +39,23 @@ content:
     view:
       fields:
         - title
+        - layout
     fields:
       - name: title
         label: Title
         type: string
+      - name: layout
+        label: Layout
+        type: select
+        options:
+          values:
+            - home
+            - default
+            - minimal
+            - about
+            - page
+            - post
+        default: default
       - name: body
         label: Body
         type: rich-text
